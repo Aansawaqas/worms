@@ -40,15 +40,7 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 <span className="text-gray-400">support@wormzone.io</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                <span className="text-gray-400">123 Game Street, CA 94105</span>
-              </li>
+              </li>              
             </ul>
           </div>
         </div>

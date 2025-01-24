@@ -10,9 +10,7 @@ export function About() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
             <p className="text-gray-600">
-              VideoMaster Pro was created with a simple mission: to make professional video editing
-              accessible to everyone. Our team of passionate developers and designers worked
-              tirelessly to create an intuitive yet powerful video editing solution for Android devices.
+             Grow, fight, and conquer in this addictive mobile gaming experience that tests your skills and reflexes.
             </p>
           </section>
 

@@ -9,7 +9,7 @@ export const contentSections = [
   },
   {
     title: "Stunning Visual Effects",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop",
+    image: "https://blogger.googleusercontent.com/img/a/AVvXsEjWYeMBZnq9uD8D54yiMorFLCWW-N1DMRlW7HBZiPaLJyq_Tb2R1RMSux8Tqybw0xHel4DqLVn4qw1P6FagqLbeNeitSARYPmODMdHfQq-yThI_bobemmYmtHRUbcjR3xBAT1G1e8oXH00PijR3CW4orpc140UvJiBN7IVByrqMuBdCxMcgDBW3orqa2s8",
     paragraphs: [
       "Experience the game in stunning HD graphics with vibrant colors and smooth animations. Our advanced particle system creates mesmerizing visual effects as you glide through the arena, making every movement a spectacle.",
       "Customize your worm with hundreds of unique skins, patterns, and special effects. Stand out in the arena with exclusive cosmetics and show off your achievements with special visual effects that you unlock as you progress."
@@ -17,7 +17,7 @@ export const contentSections = [
   },
   {
     title: "Cross-Platform Gaming",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop",
+    image: "https://blogger.googleusercontent.com/img/a/AVvXsEgemBuCuRPLCEHUYAaAB75EVf5ircdEOEPpf40KTNek4-JfspC6S0qNWgFApsRMli49-wrka4Hk2wctIhdorDXRZDT21l_0GEWaTOtqLqGptXoH3JsZLJ-awMvq_pLb4AKyoK7khEx6LQFYKHMJEE4HoVT-USR1-7TJbl1b0gOuSjZLgEfRLsXuTMIhonE",
     paragraphs: [
       "Play seamlessly across all your devices with our cloud save system. Your progress, achievements, and customizations are automatically synchronized, allowing you to continue your journey wherever you go.",
       "Join millions of players in global events and tournaments. Compete for exclusive rewards, climb the global leaderboards, and become a legend in the Worm Zone community."

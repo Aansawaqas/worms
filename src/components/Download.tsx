@@ -14,7 +14,7 @@ export function DownloadSection() {
         </div>
         <div className="flex justify-center items-center gap-2">
           <Star className="w-5 h-5 text-yellow-400" fill="currentColor" />
-          <span className="text-lg">4.8/5 Rating on Google Play</span>
+          <span className="text-lg">4.3/5 Rating on Google Play</span>
         </div>
       </div>
     </section>

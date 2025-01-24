@@ -2,12 +2,29 @@ import React from 'react';
 import { Download, Star } from 'lucide-react';
 
 export function DownloadSection() {
+  const handleDownload = () => {
+    const url = 'https://example.com/worm-zone-apk.apk'; // Replace with your APK file URL
+    const filename = 'worm-zone-apk.apk'; // Replace with your APK file name
+    const redirectUrl = 'https://play.google.com/store/apps/details?id=com.example.wormzone'; // Replace with your desired redirect URL
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.target = '_blank';
+    a.click();
+
+    window.open(redirectUrl, '_blank');
+  };
+
   return (
     <section id="download" className="py-20 bg-green-600 text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-8">Download Worm Zone .io</h2>
         <div className="flex justify-center gap-4 mb-8">
-          <button className="bg-white text-green-600 px-8 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors">
+          <button
+            className="bg-white text-green-600 px-8 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors"
+            onClick={handleDownload}
+          >
             <Download className="w-5 h-5" />
             Download APK
           </button>

@@ -5,32 +5,32 @@ const features = [
   {
     icon: Gamepad2,
     title: 'Addictive Gameplay',
-    description: 'Simple to learn, challenging to master mechanics',
+    description: 'Grow your worms size and strength',
   },
   {
     icon: Trophy,
-    title: 'Daily Challenges',
-    description: 'Complete missions and earn exclusive rewards',
+    title: 'Accessibility',
+    description: 'Cross-platform compatibility',
   },
   {
     icon: Users,
     title: 'Multiplayer Arena',
-    description: 'Battle against players worldwide in real-time',
+    description: 'Epic Multiplayer Arcade Experience',
   },
   {
     icon: Palette,
-    title: 'Custom Skins',
-    description: 'Unlock and collect hundreds of unique worm skins',
+    title: 'Visual Experience',
+    description: 'Minimalistic, clean graphics - Smooth, engaging design',
   },
   {
     icon: Crown,
-    title: 'Global Ranking',
-    description: 'Climb the leaderboards and become a legend',
+    title: 'Competitive Elements',
+    description: 'Real-time PVP battles - Dynamic scoring system',
   },
   {
     icon: Zap,
-    title: 'Power-ups',
-    description: 'Collect special abilities and dominate the arena',
+    title: 'Unique Gameplay',
+    description: 'Fighter: Aggressive confrontation - Builder: Tactical area control',
   },
 ];
 

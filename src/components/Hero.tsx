@@ -8,6 +8,7 @@ export function Hero() {
         <h1 className="text-5xl font-bold mb-6">Worms Zone Mod Apk Latest Version</h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           (Unlimited Coins, MOD Apk, ) 6.4.0 free for android
+          Updated January 25, 2025 - Installs 600,000,000+
         </p>
         <div className="flex justify-center gap-4">
           <a

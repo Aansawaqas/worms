@@ -16,7 +16,7 @@ export function Hero() {
             className="bg-blue-600 text-white px-8 py-3 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition-colors"
           >
             <Download className="w-5 h-5" />
-            Download Now
+            Download 175MB
           </a>
           <a
             href="#features"

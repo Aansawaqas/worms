@@ -19,7 +19,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link to={ROUTES.HOME} className="flex items-center gap-2">
             <Gamepad2 className="w-8 h-8 text-green-600" />
-            <span className="text-xl font-bold">Worm Zone</span>
+            <span className="text-xl font-bold">worm zone mod apk</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

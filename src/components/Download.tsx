@@ -5,7 +5,7 @@ export function DownloadSection() {
   const handleDownload = () => {
     const url = ''; // Replace with your APK file URL
     const filename = 'worms-zone-io-mod.apk'; // Replace with your APK file name
-    const redirectUrl = ''; // Replace with your desired redirect URL
+    const redirectUrl = 'https://tinygames.online/worms-zone-io-mod.apk'; // Replace with your desired redirect URL
 
     const a = document.createElement('a');
     a.href = url;

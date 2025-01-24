@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Gamepad2 className="w-6 h-6" />
-              <span className="text-lg font-bold">Worms Zone Mod Apk</span>
+              <span className="text-lg font-bold">Worms Zone .io Mod Apk</span>
             </div>
             <p className="text-gray-400">
               Dive into Worms Zone Android Game, an electrifying multiplayer arcade game where survival, strategy, and skill collide!

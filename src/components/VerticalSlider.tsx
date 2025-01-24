@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 
 const images = [
-  'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=800&fit=crop',
-  'https://images.unsplash.com/photo-1622151834677-70f982c9adef?w=400&h=800&fit=crop',
-  'https://images.unsplash.com/photo-1628348070889-cb656235b4eb?w=400&h=800&fit=crop',
-  'https://images.unsplash.com/photo-1618331835717-801e976710b2?w=400&h=800&fit=crop',
-  'https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=400&h=800&fit=crop',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEi5wIMVCtb0Ru_q8xEEFK86CqJ6kwHXZolL2P4AxQ0n9qBDiyjAmQ4ZHMWtk08pNGfsNOeIYcZF77PBNThNSWJsRCuwvVL0DF1e_4GZ1nb_9bk93mBZ0I2fpOX55ADxXTObDGZs_VVe44jFBFsbif6FjOmuv3YGWxkQ1PAWSJUqNVz9xXpsvgx3YYMaQ28',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEjKAarzplczs_2FuwA3QCheso5VTH_RTQFpNjUfy8HmJ_6urOkuml5IRfhtjCyGEmATsCvnioy5k8WOtASSI_FGz14bt96H8zy2KAJyHQ45W5kzLDUCHZXmzC6w3QmkpMoJw59YMfk8OTkMeTT3Hz0dM79SVBq9xWVpNlYx_h_XXTjjH5YXhaAdHFKX2Dg',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEg8G5qFAy8Pg_stmND59JEG0cG0J-K_MX4ZjA84h0E8LkPKCOt6JYeBcrye9xzJMkv_EGP6JgYc-EbNA6Pcrkgvmn8tlL5XNf5Z7h7nuP_q-Yv7V7t1Ejga0E9KcuadYfroOPdR4eaEptnOmGVir9An86LQRLlQAnAQtpaR6eNJLxOD7m2kcLGHlGcPWnw',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEilVfDh6LsHqUknygBs97_iYhPXuXlEj2bd60Yn9FUtNY1NipJFkar6_bMdXezKlJEvhhnFHf33ECJ_smXcB95_JGGwEtMKXZuAWGcrlii_wzJk-4Zu9pYJDn7TdjnhJKQLfeXHYNYySl2FL2y79JXMPOASPPPbun7QyEGsn1vtPbDRceeY0q3GG1_8DfI',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEjbJCyjXQoo5R6HKhYOS7Ch4Lz8MugqmH9Lip6n2Q41H3b7q72fKBrhAFO8b-GsqrZys3m-qsI1lD80rgorBc4ShISASwLwodH49SwbA3NfU6KFtb8VtdFHNsyJ38fgpPJDuk2jWQm6YRN0lRRH7sUxiyI7ijTOoD1_lXZFUlRMXBuZRcFSAVBses3HAeY',
 ];
 
 export function VerticalSlider() {

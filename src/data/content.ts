@@ -1,7 +1,7 @@
 export const contentSections = [
   {
     title: "Epic Multiplayer Battles",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop",
+    image: "https://blogger.googleusercontent.com/img/a/AVvXsEioBUw8bwa_Xx7df2Z5QfZ25eU6NbECUe-Sl9AVmTelLxCt0DeFDBbKkuPcRakoHza50r2dOjqT82_0uHNswhcEL3IUq507EU9eMc-fyTWgeyCOG5cz8P_1y1893kNWNE-baW2Nih2e5ii5kICbVcgalzqIDmdcqe7INSiSBLS2aPL2CuGvK60VliogLXc",
     paragraphs: [
       "Enter the arena and compete against players from around the world in Worm Zone. Our innovative gameplay mechanics combine classic snake gameplay with modern multiplayer features, creating an addictive and thrilling experience.",
       "Challenge yourself to become the biggest worm in the arena. Collect glowing orbs, trap other players, and use strategic maneuvers to dominate the leaderboard. Every match brings new challenges and excitement."

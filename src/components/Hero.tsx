@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="pt-32 pb-20 relative bg-gradient-to-b from-white/80 to-transparent backdrop-blur-sm">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-5xl font-bold mb-6">Worms Zone Mod Apk Latest Version</h1>
+        <h1 className="text-5xl font-bold mb-6">Worms Zone .io Mod Apk Latest Version</h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Unlimited Coins, MOD Apk v6.4.0 free for android
           Updated January 25, 2025 - Installs 600,000,000+

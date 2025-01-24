@@ -27,7 +27,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold mb-4">Pages</h3>
             <ul className="space-y-2">
               <li><Link to={ROUTES.PRIVACY} className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link to={ROUTES.TERMS} className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>

@@ -38,7 +38,7 @@ export function Features() {
   return (
     <section id="features" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Game Features</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">Worms Zone Mod Apk Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">

@@ -15,6 +15,7 @@ import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
 import { Contact } from './pages/Contact';
 import { About } from './pages/About';
+import { Robots } from './Robots.txt';
 import { ROUTES } from './utils/routes';
 
 function HomePage() {

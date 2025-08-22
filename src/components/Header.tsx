@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Gamepad2, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../utils/routes';
-import { Helmet } from 'react-helmet-async';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,72 +23,98 @@ export function Header() {
     publisher: "Worms Zone Mod Publishing"
   };
 
+  // Update document head on component mount
+  useEffect(() => {
+    // Set title
+    document.title = seoData.title;
+    
+    // Set meta tags
+    const setMetaTag = (name, content) => {
+      let tag = document.querySelector(`meta[name="${name}"]`);
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.name = name;
+        document.head.appendChild(tag);
+      }
+      tag.content = content;
+    };
+
+    // Set link tags
+    const setLinkTag = (rel, href) => {
+      let tag = document.querySelector(`link[rel="${rel}"]`);
+      if (!tag) {
+        tag = document.createElement('link');
+        tag.rel = rel;
+        document.head.appendChild(tag);
+      }
+      tag.href = href;
+    };
+
+    // Set all meta tags
+    setMetaTag('description', seoData.description);
+    setMetaTag('keywords', seoData.keywords);
+    setMetaTag('author', seoData.author);
+    setMetaTag('publisher', seoData.publisher);
+    setMetaTag('robots', 'index, follow');
+    
+    // Set canonical URL
+    setLinkTag('canonical', seoData.canonicalUrl);
+    
+    // Set Open Graph tags for social media
+    setMetaTag('og:title', seoData.title);
+    setMetaTag('og:description', seoData.description);
+    setMetaTag('og:url', seoData.canonicalUrl);
+    setMetaTag('og:type', 'website');
+    
+    // Set Twitter Card tags
+    setMetaTag('twitter:card', 'summary_large_image');
+    setMetaTag('twitter:title', seoData.title);
+    setMetaTag('twitter:description', seoData.description);
+  }, [seoData]);
+
   return (
-    <>
-      <Helmet>
-        <title>{seoData.title}</title>
-        <meta name="description" content={seoData.description} />
-        <meta name="keywords" content={seoData.keywords} />
-        <meta name="author" content={seoData.author} />
-        <meta name="publisher" content={seoData.publisher} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={seoData.canonicalUrl} />
-        
-        {/* Open Graph meta tags for social sharing */}
-        <meta property="og:title" content={seoData.title} />
-        <meta property="og:description" content={seoData.description} />
-        <meta property="og:url" content={seoData.canonicalUrl} />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter Card meta tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={seoData.title} />
-        <meta name="twitter:description" content={seoData.description} />
-      </Helmet>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+      <nav className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <Link to={ROUTES.HOME} className="flex items-center gap-2">
+            <Gamepad2 className="w-8 h-8 text-green-600" />
+            <span className="text-xl font-bold">worms zone mod apk</span>
+          </Link>
 
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <nav className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link to={ROUTES.HOME} className="flex items-center gap-2">
-              <Gamepad2 className="w-8 h-8 text-green-600" />
-              <span className="text-xl font-bold">worms zone mod apk</span>
-            </Link>
-
-            <div className="hidden md:flex items-center gap-8">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-
-            <button
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X /> : <Menu />}
-            </button>
+          <div className="hidden md:flex items-center gap-8">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
 
-          {isMenuOpen && (
-            <div className="md:hidden mt-4 space-y-4">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          )}
-        </nav>
-      </header>
-    </>
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
+
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 space-y-4">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="block text-gray-600 hover:text-green-600 transition-colors"
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        )}
+      </nav>
+    </header>
   );
 }

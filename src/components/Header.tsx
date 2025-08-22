@@ -19,8 +19,8 @@ export function Header() {
     description: "Download Worms Zone Mod Apk with unlimited resources, all worms unlocked, and no ads. Enjoy the ultimate slither.io experience with our modded version.",
     keywords: "worms zone mod apk, worms zone, mod apk, slither.io mod, snake game mod, unlimited resources, free download",
     canonicalUrl: "https://wormszonemodapk.fun/",
-    author: "Worms Zone Mod Team",
-    publisher: "Worms Zone Mod Publishing"
+    author: "Worms Zone Mod",
+    publisher: "Worms Zone Mod"
   };
 
   // Update document head on component mount
